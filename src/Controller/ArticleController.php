@@ -22,7 +22,7 @@ class ArticleController extends AbstractController {
             $datas = $categorie->SqlGetAll(BDD::getInstance());
 
             return $this->twig->render("Article/add.html.twig", [
-                "categorieList" => $datas
+               "categorieList" => $datas
             ]);
         }
     }
