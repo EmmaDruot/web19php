@@ -14,6 +14,11 @@
             <option>Léo</option>
             <option >Aegir</option>
         </select>
+        <select name="categorie">
+            {% for categorie in categorieList %}
+                <option ></option>
+            {% endfor %}
+        </select>
         <input type="submit" value="Enregistrer les modifications">
     </form>
 

@@ -18,10 +18,13 @@ class ArticleController extends AbstractController {
             // Redirection
             header("Location:/article/show/$id");
         }else{
-            return $this->twig->render("Article/add.html.twig");
+            $categorie = new categorie();
+            $datas = $categorie->SqlGetAll(BDD::getInstance());
+
+            return $this->twig->render("Article/add.html.twig", [
+                "categorieList" => $datas
+            ]);
         }
-
-
     }
 
     public function All(){

@@ -10,6 +10,7 @@ class Article {
     private $ImageRepository;
     private $ImageFileName;
 
+
     /**
      * Cette fonction retourne les X premiers mots de la description
      * @param $limitWord = LA limite en question
